@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aswath - Technology Writer Portfolio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Georgia', serif; line-height: 1.8; color: #2c3e50; max-width: 900px; margin: 0 auto; padding: 40px 20px; background: #f8f9fa; }
+        
+        .header { text-align: center; padding-bottom: 60px; border-bottom: 3px solid #3498db; margin-bottom: 50px; animation: fadeInDown 1s ease-out; }
+        @keyframes fadeInDown { from { opacity: 0; transform: translateY(-30px); } to { opacity: 1; transform: translateY(0); } }
+        
+        h1 { font-size: 3.5rem; color: #2c3e50; margin-bottom: 10px; font-weight: 400; letter-spacing: -2px; }
+        .tagline { font-size: 1.4rem; color: #7f8c8d; font-style: italic; margin-bottom: 20px; }
+        .contact-info { font-size: 1.1rem; color: #34495e; opacity: 0.8; }
+        .contact-info a { color: #3498db; text-decoration: none; transition: color 0.3s; }
+        .contact-info a:hover { color: #e74c3c; }
+        
+        .section { margin-bottom: 60px; animation: fadeInUp 1s ease-out 0.3s both; opacity: 0; transform: translateY(30px); }
+        .section.show { opacity: 1; transform: translateY(0); }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        
+        h2 { font-size: 2.2rem; color: #2c3e50; margin-bottom: 25px; font-weight: 300; position: relative; padding-bottom: 10px; }
+        h2::after { content: ''; position: absolute; bottom: 0; left: 0; width: 60px; height: 3px; background: linear-gradient(90deg, #3498db, #e74c3c); }
+        
+        .about-text { font-size: 1.15rem; line-height: 1.9; color: #34495e; }
+        .about-text p { margin-bottom: 20px; }
+        
+        .writing-samples { background: white; padding: 40px; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.08); border-left: 5px solid #3498db; }
+        .sample-item { margin-bottom: 35px; padding-left: 20px; border-left: 3px solid #ecf0f1; transition: all 0.3s; cursor: pointer; }
+        .sample-item:hover { border-left-color: #3498db; transform: translateX(10px); }
+        .sample-title { font-size: 1.4rem; color: #2c3e50; margin-bottom: 8px; font-weight: 400; }
+        .sample-preview { color: #7f8c8d; margin-bottom: 12px; font-style: italic; }
+        .sample-date { font-size: 0.9rem; color: #95a5a6; }
+        
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 25px; margin-top: 30px; }
+        .skill-tag { background: linear-gradient(135deg, #3498db, #2980b9); color: white; padding: 12px 20px; border-radius: 25px; text-align: center; 
+                     font-weight: 500; transition: all 0.3s; cursor: pointer; transform: translateY(10px); opacity: 0; }
+        .skill-tag:nth-child(1) { transition-delay: 0.1s; }
+        .skill-tag:nth-child(2) { transition-delay: 0.2s; }
+        .skill-tag:nth-child(3) { transition-delay: 0.3s; }
+        .skill-tag:nth-child(4) { transition-delay: 0.4s; }
+        .skill-tag:hover { transform: translateY(-5px) scale(1.05); box-shadow: 0 15px 30px rgba(52, 152, 219, 0.4); }
+        
+        @media (max-width: 768px) {
+            h1 { font-size: 2.8rem; }
+            body { padding: 20px 15px; }
+            .writing-samples { padding: 25px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Aswath</h1>
+        <p class="tagline">Technology Writer | E-commerce Founder | AI Specialist</p>
+        <div class="contact-info">
+            <a href="mailto:aswathshaik61@gmail.com">aswathshaik61@gmail.com</a> | 
+            <a href="tel:+919705756789">+91 9705756789</a> | 
+            <a href="https://instagram.com/drop_ai_">@drop_ai_</a> | India | Available for Hire
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>About</h2>
+        <div class="about-text">
+            <p>16-year-old technology writer and entrepreneur from India. Built DROP.AI, a complete AI-powered dropshipping platform for the Indian market from scratch using HTML, CSS, JavaScript, and e-commerce APIs.</p>
+            <p>Specialize in writing about AI tools for students, dropshipping strategies, web development tutorials, and startup lessons. Experienced in explaining complex technical concepts to beginners while maintaining accuracy for expert readers.</p>
+            <p>Currently freelancing web development while pursuing engineering studies in digital electronics, DBMS, and IoT. Seeking technology writing roles to combine coding expertise with clear communication.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Writing Samples</h2>
+        <div class="writing-samples">
+            <div class="sample-item">
+                <div class="sample-title">How AI Tools Help Indian Students Study 3x Faster</div>
+                <div class="sample-preview">"From ChatGPT for homework to AI coding assistants, discover practical tools that saved me 20+ hours weekly during exams while building DROP.AI..."</div>
+                <div class="sample-date">December 2025 • 8 min read</div>
+            </div>
+            <div class="sample-item">
+                <div class="sample-title">Dropshipping in India: Complete 2025 Guide</div>
+                <div class="sample-preview">"Step-by-step process to launch profitable stores without inventory. Lessons from building DROP.AI including supplier APIs and Razorpay integration..."</div>
+                <div class="sample-date">December 2025 • 12 min read</div>
+            </div>
+            <div class="sample-item">
+                <div class="sample-title">Building E-commerce Sites Without Third-Party Platforms</div>
+                <div class="sample-preview">"Created Amazon/Flipkart clone from scratch. HTML/CSS/JS stack, responsive design, cart system, and payment gateways for Indian market..."</div>
+                <div class="sample-date">November 2025 • 10 min read</div>
+            </div>
+            <div class="sample-item">
+                <div class="sample-title">Top Web Dev Tools Every Freelancer Needs</div>
+                <div class="sample-preview">"Budget-friendly stack that earned me first freelance clients. From GitHub Pages hosting to Canva for client mockups..."</div>
+                <div class="sample-date">December 2025 • 6 min read</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Skills & Expertise</h2>
+        <div class="about-text">
+            <p>Technology writing across AI, e-commerce, web development, and startups. Proven ability to research deeply, write clearly, and edit for SEO + technical accuracy.</p>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-tag">Tech Writing</div>
+            <div class="skill-tag">Content Editing</div>
+            <div class="skill-tag">SEO Optimization</div>
+            <div class="skill-tag">Web Development</div>
+        </div>
+    </div>
+
+    <script>
+        // Trigger animations on load
+        window.addEventListener('load', () => {
+            document.querySelectorAll('.section').forEach((el, index) => {
+                setTimeout(() => el.classList.add('show'), index * 200);
+            });
+            
+            document.querySelectorAll('.skill-tag').forEach((el, index) => {
+                el.style.opacity = '1';
+                el.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body>
+</html>
